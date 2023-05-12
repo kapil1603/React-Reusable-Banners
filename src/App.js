@@ -25,7 +25,7 @@ const bannerCardsList = [
 
 const App = () => (
   <div className="seasons-container">
-    <ul>
+    <ul className="banner-cards-list">
       {bannerCardsList.map(eachItem => (
         <Seasons bannerDetails={eachItem} key={eachItem.id} />
       ))}

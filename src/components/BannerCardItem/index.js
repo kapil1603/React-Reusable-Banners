@@ -6,7 +6,7 @@ const Seasons = props => {
   const {headerText, description, className} = bannerDetails
   console.log(className)
   return (
-    <div className={className}>
+    <li className={`${className} banner-card-item`}>
       <div className="bg-container">
         <h1 className="heading">{headerText}</h1>
         <p className="para"> {description}</p>
@@ -14,7 +14,7 @@ const Seasons = props => {
           Show More
         </button>
       </div>
-    </div>
+    </li>
   )
 }
 
